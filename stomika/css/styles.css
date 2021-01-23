@@ -1,0 +1,40 @@
+#contacts{
+    background-color: #FFF;
+}
+
+.navbar-brand img {
+    height: 30px;
+}
+
+.phone{
+    font-size: 1.3rem;
+}
+
+footer i{
+    color: #AAA;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #AAA !important;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* @media (max-width: 576px){
+    .navbar-toggler {
+        display: none;
+    }
+} */

@@ -14,13 +14,17 @@
     font-size: 1.3rem;
 }
 
-footer i{
-    color: #AAA;
+footer i {
+    color: #DDD;
     font-size: 1.5rem;
 }
 
+footer p {
+    color: #DDD;
+}
+
 .nav-link {
-    color: #AAA !important;
+    color: #DDD !important;
 }
 
 .map-responsive{

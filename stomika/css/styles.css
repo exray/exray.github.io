@@ -1,3 +1,7 @@
+:root {
+    --main-color: rgb(53, 53, 53);
+}
+
 .card {
     margin-top: 25px;
 }
@@ -14,6 +18,69 @@
     font-size: 1.3rem;
 }
 
+.services {
+    color: var(--main-color);
+}
+
+.services h1 {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.services h1 {
+    position: relative;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* .services h1::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 2px;
+    background: black;
+    width: 200px;
+    left: 50%;
+    top: 7vh;
+    transform: translateX(-50%);
+} */
+
+.services h3 {
+    margin-top: 3rem;
+}
+
+.list-group .list-group-item {
+    padding-left: 0;
+    display: inline-block;
+}
+
+.list-group .list-group-item a {
+    text-decoration: none;
+    color: rgb(33,37,41);
+    display: block;
+}
+
+.list-group .list-group-item:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+#doctors {
+    position: relative;
+}
+
+#doctors h3 {
+    color: var(--main-color);
+}
+
+#doctors .doctors-header {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#contacts h3 {
+    color: var(--main-color);
+}
+
 footer i {
     color: #DDD;
     font-size: 1.5rem;
@@ -24,7 +91,7 @@ footer p {
 }
 
 .nav-link {
-    color: #DDD !important;
+    /* color: #DDD !important; */
 }
 
 .map-responsive{

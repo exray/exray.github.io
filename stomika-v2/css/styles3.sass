@@ -1,0 +1,89 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    // font-family: "Raleway", sans-serif
+    font-family: 'Open Sans', sans-serif;
+
+$gray: rgb(115, 115, 115)
+$orange: rgb(255, 162, 41)
+$darkgray: rgb(28,51,67)
+
+.container
+    max-width: 1320px
+    margin: 0 auto
+
+.main-wrapper
+    min-height: 100%
+    background: #fff
+    position: relative
+
+.header
+    position: relative
+    display: flex
+    justify-content: space-around
+    align-items: center
+    height: 84px
+    font-size: 13px
+    color: $gray
+    &-wrapper
+        background: #fff
+        position: relative
+        z-index: 100
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+    .logo
+        // margin-left: -200px
+    &-address
+        position: relative
+    &-schedule
+        position: relative
+
+    &-contacts
+        &__phone
+            font-weight: 800
+        &__phone a, &__email a
+            text-decoration: none
+            color: black
+            font-size: 18px
+            > i
+                font-size: 18px
+                margin-right: 5px
+                vertical-align: middle
+                margin-top: -2px
+                color: $orange
+                font-weight: 400
+        &__email a
+            font-size: 13px
+    &-address, &-schedule
+        > i
+            position: absolute
+            font-size: 18px
+            top: 0
+            left: -22px
+            color: $orange
+            font-weight: 400
+
+.top-nav
+    &-wrapper
+        width: 100%
+        background: $darkgray
+    height: 54px
+    display: flex
+    justify-content: space-around
+    align-items: center
+    &-list
+        display: flex
+        list-style-type: none
+    ul
+        font-weight: 700
+        text-transform: uppercase
+        li
+            margin-right: 50px
+        li a
+            color: white
+            text-decoration: none
+            &:hover
+                color: $orange
+                transition: all 0.3s ease 0s
+            &.active
+                color: $orange

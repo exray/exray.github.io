@@ -3,11 +3,11 @@
     padding: 0
     box-sizing: border-box
     // font-family: "Raleway", sans-serif
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif
 
 $gray: rgb(115, 115, 115)
 $orange: rgb(255, 162, 41)
-$pureorange: rgb(255, 128, 2);
+$pureorange: rgb(255, 128, 2)
 $darkgray: rgb(28,51,67)
 $lightgray: rgb(235,235,235)
 $blue: rgb(27,163,213)
@@ -20,6 +20,57 @@ main
     min-height: 100%
     background: rgb(255, 255, 255)
     position: relative
+
+.btn
+    display: inline-block
+    text-decoration: none !important
+    color: #fff
+    background: #FF7F00
+    font-size: 16px
+    line-height: 1
+    padding: 18px 35px
+    margin-bottom: 10px
+    position: relative
+    text-align: center
+    cursor: pointer
+    border-radius: 30px
+    font-weight: bold
+    border: 2px solid #FF7F00
+    letter-spacing: 1px
+    -webkit-transition: all 200ms ease-out
+    -moz-transition: all 200ms ease-out
+    -o-transition: all 200ms ease-out
+    transition: all 200ms ease-out
+
+.btn:hover
+    background: transparent
+    color: #FF7F00
+
+.btn.invert
+    background: transparent
+    color: #FF7F00
+
+.btn.invert:hover
+    color: #fff
+    background: #FF7F00
+
+.btn.white-btn
+    background: #fff
+    border-color: #fff
+    color: #ff8001
+
+.btn.white-btn:hover
+    background: transparent
+    color: #fff
+
+.btn i.material-icons
+    vertical-align: middle
+    margin: -3px 2px 0
+    line-height: 1
+
+.btn.min
+    padding: 15px 22px
+
 
 .header
     position: relative
@@ -123,7 +174,7 @@ main
     font-weight: 700
     text-transform: uppercase
 
-.advantages-big-header, .doctors-big-header, .bestprice-big-header
+.advantages-big-header, .doctors-big-header, .bestprice-big-header, .consult-header
     font-size: 40px
     font-family: "raleway", sans-serif
 
@@ -162,7 +213,7 @@ main
 
 .doctors-wrapper
     padding-top: 60px
-    background: url(../icons/pattern1.png) -3px -3px #15384F;
+    background: url(../icons/pattern1.png) -3px -3px #15384F
     text-align: center
     height: 600px
 
@@ -179,20 +230,42 @@ main
     align-items: center
     &__image
         border-radius: 100%
-        width: 230px
+        width: 200px
     &__name
-        margin-top: 5px
+        margin-top: 25px
         color: rgb(255, 255, 255)
         font-size: 15px
     &__spec
-        margin-top: 3px
+        margin-top: 5px
         color: rgba(255, 255, 255, 0.6)
         font-size: 13px
 
+   
+.consult
+    &-wrapper
+        padding-top: 60px
+        text-align: center
+        height: 350px
+        background: rgb(29, 163, 213)
+        opacity: 0.8
+        a
+            margin-top: 50px
+    &-header
+        color: rgb(255, 255, 255)
+    &-text
+        color: rgb(255, 255, 255)
+        margin-top: 20px
+        font-size: 13px
+
+
+
+    
 .bestprice-wrapper
     padding-top: 60px
     text-align: center
     height: 650px
+    a
+        margin-top: 40px
 
 .bestprice-list
     margin-top: 70px

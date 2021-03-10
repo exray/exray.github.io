@@ -75,12 +75,12 @@ main
     position: relative
     display: flex
     justify-content: space-around
-    align-items: center
-    min-height: 100px
+    min-height: 70px
     font-size: 13px
     color: $gray
     &-wrapper
         background: rgb(255, 255, 255)
+        margin-top: 20px;
         position: relative
         z-index: 100
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
@@ -92,14 +92,14 @@ main
         position: relative
 
     &-contacts
+        margin-top: -6px
         &__phone
-            font-weight: 800
-        &__phone a, &__email a
+            font-weight: 700
             text-decoration: none
             color: black
-            font-size: 18px
+            font-size: 24px
             > i
-                font-size: 18px
+                font-size: 24px
                 margin-right: 5px
                 vertical-align: middle
                 margin-top: -2px
@@ -118,12 +118,19 @@ main
 
 .top-nav
     &-wrapper
+        position: fixed;
+        top: 90px;
+        z-index: 1;
+        left: 0;
         width: 100%
         background: $darkgray
         height: 54px
         display: flex
         justify-content: space-around
         align-items: center
+        transition: 0.4s
+        &.sticky
+            top: 0
     &-list
         position: relative
         display: flex
@@ -134,18 +141,19 @@ main
         li
             display: inline-block
             padding: 0 7px
-            margin-right: 50px
             position: relative
-            &:not(:last-child):after
-                position: absolute
-                content: ""
-                display: block
-                width: 1px
-                height: 22px
-                background-color: rgba(255, 255, 255, 0.2)
-                right: -25px
-                top: 50%
-                transform: translateY(-50%)
+            &:not(:last-child)
+                margin-right: 50px
+                &:after
+                    position: absolute
+                    content: ""
+                    display: block
+                    width: 1px
+                    height: 22px
+                    background-color: rgba(255, 255, 255, 0.2)
+                    right: -25px
+                    top: 50%
+                    transform: translateY(-50%)
         li a
             color: white
             text-decoration: none
@@ -163,7 +171,7 @@ main
 
 .advantages-wrapper
     padding-top: 60px
-    height: 520px
+    min-height: 520px
     text-align: center
     background-color: rgb(249, 249, 249)
 
@@ -184,15 +192,21 @@ main
     font-weight: 200
 
 .advantages-list
-    margin-top: 50px
+    margin-top: 30px
     display: flex
-    justify-content: space-around
+    flex-wrap: wrap
+    justify-content: center
     align-items: center
     &__card
+        margin: 20px
         background-color: white
         border: 1px solid $lightgray
         width: 280px
         height: 280px
+        &:hover
+            cursor: pointer
+            background-color: rgba(255, 127, 0, 0.1)
+            transition: 0.5s
     &__image
         margin-top: 20px
         max-width: 100%
@@ -215,7 +229,6 @@ main
     padding-bottom: 20px;
     background: url(../icons/pattern1.png) -3px -3px rgb(21, 56, 79)
     text-align: center
-    min-height: 600px
 
 .doctors-big-header
     color: $lightgray
@@ -224,18 +237,22 @@ main
     color: rgba(255, 255, 255, 0.6)
 
 .doctors-list
+    min-height: 340px
+    margin-top: 100px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
     &__card
         min-height: 200px
         width: 190px
+        margin: 0 40px
+        flex-grow: 0
+        // flex-shrink: 0
         img
             width: 100%
             object-fit: cover
-    margin-top: 100px
-    display: flex
-    justify-content: space-evenly
-    // align-items: center
     &__image
-        border-radius: 100%
+        border-radius: 3%
     &__name
         margin-top: 25px
         color: rgb(255, 255, 255)
@@ -250,7 +267,7 @@ main
         // background: url("../images/bg/consult.jpg")
         padding-top: 60px
         text-align: center
-        height: 350px
+        min-height: 350px
         background: rgb(29, 163, 213)
         opacity: 0.8
         a
@@ -265,20 +282,26 @@ main
 .bestprice-wrapper
     padding-top: 60px
     text-align: center
-    height: 650px
+    min-height: 650px
     a
         margin-top: 40px
 
 .bestprice-list
-    margin-top: 70px
+    margin-top: 50px
     display: flex
-    justify-content: space-around
+    flex-wrap: wrap
+    justify-content: center
     align-items: center
     &__card
+        margin: 20px
         background-color: white
         border: 1px solid $lightgray
         width: 280px
         height: 280px
+        &:hover
+            cursor: pointer
+            background-color: rgba(255, 127, 0, 0.1)
+            transition: 0.5s
     &__image
         margin-top: 20px
         max-width: 100%
@@ -324,6 +347,7 @@ main
             color: $gray
             font-size: 13px
         &-address
+            margin-left: 20px
             font-size: 14px
             &__address
                 position: relative
@@ -418,7 +442,8 @@ footer
         // max-width: 1100px
     .doctors-list
         &__card
-            height: 180px
+            margin: 20px
+            min-height: 180px
         &__name
             font-size: 14px
         &__spec
@@ -458,8 +483,8 @@ footer
             margin-top: 10px
     .bestprice-list
         &__card
-            width: 220px
-            height: 220px
+            min-width: 220px
+            min-height: 220px
         &__image
             margin-top: 10px
         &__text
@@ -467,14 +492,32 @@ footer
             font-size: 20px
 
 @media screen and ( max-width: 992px )
-    .header-address
-        display: none
-    .header-worktime
-        display: none
-    .doctors-list
-        &__card
-            height: 16de0px
-        &__name
-            font-size: 14px
-        &__spec
-            font-size: 13px
+    .header
+        &-address, &-worktime
+            display: none
+        &-contacts
+            align-self: center
+            margin-top: -20px;
+        &-contacts__phone
+            font-size: 26px;
+    .doctors
+        &-text
+            padding: 0 20px
+        &-list
+            &__card
+                // min-height: 160px
+            &__name
+                font-size: 14px
+            &__spec
+                font-size: 13px
+
+@media screen and (max-width: 768px)
+    .doctors
+        &-list
+            margin-top: 30px;
+            &__card
+                margin-top: 30px
+    .top-nav ul li:not(:last-child)
+        margin-right: 20px
+        &::after
+            right: -11px

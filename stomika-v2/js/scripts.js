@@ -27,3 +27,15 @@ window.addEventListener("scroll", function(){
     const menu = document.querySelector(".top-nav-wrapper");
     menu.classList.toggle("sticky", window.scrollY > 0);
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+    burger = document.querySelector('.header-burger');
+    menu = document.querySelector('.top-nav-wrapper'),
+    body = document.querySelector('body');
+
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('active');
+        menu.classList.toggle('active');
+        body.classList.toggle('lock');
+    });
+})

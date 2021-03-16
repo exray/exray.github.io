@@ -72,6 +72,8 @@ main
     padding: 15px 22px
 
 .header
+    &__burger
+        display: none
     position: relative
     display: flex
     justify-content: space-around
@@ -136,6 +138,7 @@ main
         position: relative
         display: flex
         list-style-type: none
+        flex-direction: row
     ul
         font-weight: 700
         text-transform: uppercase
@@ -514,12 +517,74 @@ footer
                 font-size: 13px
 
 @media screen and (max-width: 768px)
+    body.lock
+        overflow: hidden
     .doctors
         &-list
             margin-top: 30px;
             &__card
                 margin-top: 30px
+    .header
+        align-items: center
+        min-height: 50px
+        &-contacts
+            margin-top: 0
+        &-burger
+            margin-top: 0
+        &-wrapper
+            margin-top: 0
+    .top-nav
+        &-wrapper
+            position: fixed
+            top: -100%
+            &.active
+                top: 0
+        &-list
+            flex-direction: column
+        ul
+            li
+                font-size: 26px
+                margin: 20px 0
     .top-nav ul li:not(:last-child)
-        margin-right: 20px
         &::after
-            right: -11px
+            content: none
+    .top-nav-wrapper
+        height: 100%
+        transition: all 0.3s ease 0s;
+        // display: none
+    .header-burger 
+        align-self: center
+        display: block
+        position: relative
+        width: 30px
+        height: 20px
+        position: relative
+        z-index: 3
+        span 
+            position: absolute
+            background-color: #000
+            left: 0
+            width: 100%
+            height: 2px
+            top: 9px
+            transition: all 0.3s ease 0s
+        &:before, &:after 
+            content: ''
+            background-color: #000
+            position: absolute
+            width: 100%
+            height: 2px
+            left: 0
+            transition: all 0.3s ease 0s
+        &:before 
+            top: 0
+        &:after 
+            bottom: 0
+        &.active span 
+            transform: scale(0)
+        &.active:before 
+            transform: rotate(45deg)
+            top: 9px
+        &.active:after 
+            transform: rotate(-45deg)
+            bottom: 9px

@@ -326,7 +326,7 @@ main
 
 .contacts-wrapper
     // padding-top: 60px
-    height: 490px
+    min-height: 490px
     background-color: rgb(249, 249, 249)
 .contacts-row
     display: flex
@@ -455,6 +455,9 @@ footer
             font-size: 13px
 
 @media screen and ( max-width: 1200px )
+    .header
+        &-worktime
+            display: none
     .advantages-list
         &__card
             width: 260px

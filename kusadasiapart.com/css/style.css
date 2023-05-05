@@ -33,7 +33,6 @@ header {
     justify-content: space-between;
     align-items: center;
     transition: var(--header-transition-seconds);
-    /* padding: 40px 40px; */
     padding: 20px 100px;
     z-index: 999;
 }
@@ -152,7 +151,7 @@ header.sticky .logo {
     background-color: var(--white);
     text-align: center;
     padding-top: 3vh;
-    color: var(--gray-dark)
+    color: var(--gray-dark);
 }
 
 .rooms-photos {
@@ -174,7 +173,8 @@ header.sticky .logo {
     transform: translateX(20%);
 }
 
-.room-image:nth-child(2), .room-image:nth-child(4) {
+.room-image:nth-child(2),
+.room-image:nth-child(4) {
     transform: translateX(-20%);
 }
 
@@ -217,4 +217,25 @@ footer ul li i {
 
 footer ul li a:hover {
     color: var(--green);
+}
+
+@media screen and (max-width: 1025px) {
+    header {
+        padding: 20px 20px;
+        width: 99%;
+    }
+
+    header.sticky {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    header {
+
+    }
+
+    header.sticky {
+        
+    }
 }

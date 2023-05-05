@@ -4,7 +4,7 @@ window.addEventListener("scroll", function () {
 });
 
 function animateAdvantagesOnScroll() {
-    const elements = document.querySelectorAll(".advantages-other");
+    const elements = document.querySelectorAll(".advantages");
     const windowHeight = window.innerHeight;
 
     elements.forEach((element) => {
@@ -20,7 +20,7 @@ function animateAdvantagesOnScroll() {
 }
 
 function animateRoomsOnScroll() {
-    const elements = document.querySelectorAll(".rooms-photos img");
+    const elements = document.querySelectorAll(".rooms__photos img");
     const windowHeight = window.innerHeight;
 
     elements.forEach((element, index) => {

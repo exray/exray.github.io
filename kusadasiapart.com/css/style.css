@@ -42,7 +42,7 @@ header.sticky {
     background: var(--black);
 }
 
-header .logo {
+header .header__logo {
     position: relative;
     font-weight: 700;
     color: var(--black);
@@ -76,11 +76,11 @@ header.sticky ul li a {
     color: var(--white);
 }
 
-header.sticky .logo {
+header.sticky .header__logo {
     color: var(--white);
 }
 
-.section-photo {
+.main-photo {
     width: 100%;
     max-width: 100%;
     height: 150vh;
@@ -101,7 +101,7 @@ header.sticky .logo {
     padding-top: 5vh;
 }
 
-.advantages-other {
+.advantages {
     background-color: var(--gray-light);
     padding: 5vh;
     min-height: 15vh;
@@ -110,12 +110,12 @@ header.sticky .logo {
     transform: translateX(-100px);
 }
 
-.advantages-other.animate {
+.advantages.animate {
     opacity: 1;
     transform: translateX(0);
 }
 
-.advantages-other ul {
+.advantages ul {
     display: flex;
     flex-wrap: wrap;
     gap: 40px 40px;
@@ -123,7 +123,7 @@ header.sticky .logo {
     justify-content: center;
 }
 
-.advantages-other ul li {
+.advantages ul li {
     flex-basis: calc(100% / 5);
     list-style-type: none;
     color: var(--gray-dark);
@@ -133,16 +133,16 @@ header.sticky .logo {
     text-align: center;
 }
 
-.advantages-other ul li:hover {
+.advantages ul li:hover {
     color: var(--green);
 }
 
-.advantages-other ul li i {
+.advantages ul li i {
     font-size: 3em;
     margin: 10px;
 }
 
-.advantages-other ul li i:hover {
+.advantages ul li i:hover {
     cursor: pointer;
 }
 
@@ -154,7 +154,7 @@ header.sticky .logo {
     color: var(--gray-dark);
 }
 
-.rooms-photos {
+.rooms__photos {
     padding-top: 3vh;
     display: flex;
     gap: 1vh;
@@ -163,7 +163,7 @@ header.sticky .logo {
     justify-content: center;
 }
 
-.rooms-photos img {
+.rooms__photos img {
     opacity: 0;
     position: relative;
     transition: opacity 1.5s ease-out, transform 1.5s ease;
@@ -178,12 +178,12 @@ header.sticky .logo {
     transform: translateX(-20%);
 }
 
-.rooms-photos img.animate-right {
+.rooms__photos img.animate-right {
     opacity: 1;
     transform: translateX(0);
 }
 
-.rooms-photos img.animate-left {
+.rooms__photos img.animate-left {
     opacity: 1;
     transform: translateX(0);
 }

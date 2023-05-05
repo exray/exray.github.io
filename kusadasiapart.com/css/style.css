@@ -147,26 +147,12 @@ header.sticky .logo {
     cursor: pointer;
 }
 
-/* .rooms {
-    min-height: 50vh;
-    background-color: var(--gray-dark);
-    text-align: center;
-    color: var(--gray-light);
-    padding: 3vh 0;
-} */
-
-/* .rooms img{
-    padding: 20px;
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-} */
-
 .rooms {
     min-height: 50vh;
     background-color: var(--white);
     text-align: center;
     padding-top: 3vh;
+    color: var(--gray-dark)
 }
 
 .rooms-photos {

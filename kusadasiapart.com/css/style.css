@@ -28,17 +28,17 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 90%;
+    width: 99%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: var(--header-transition-seconds);
-    padding: 20px 100px;
+    padding: 2vh 2vw;
     z-index: 999;
 }
 
 header.sticky {
-    padding: 10px 100px;
+    padding: 2vh 2vw;
     background: var(--black);
 }
 
@@ -47,11 +47,27 @@ header .header__logo {
     font-weight: 700;
     color: var(--black);
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.8em;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: var(--header-transition-seconds);
     z-index: 10000;
+    margin-right: auto;
+    margin-left: 1vh;
+}
+
+header .header__phone {
+    font-size: 1.8em;
+    transition: var(--header-transition-seconds);
+    color: var(--black);
+}
+
+header .header__phone a {
+    color: var(--black);
+}
+
+header a:hover {
+    color: var(--green);
 }
 
 header ul {
@@ -72,11 +88,7 @@ header ul li a {
     transition: var(--header-transition-seconds);
 }
 
-header.sticky ul li a {
-    color: var(--white);
-}
-
-header.sticky .header__logo {
+header.sticky ul li a, header.sticky .header__logo, header.sticky .header__phone {
     color: var(--white);
 }
 
@@ -134,6 +146,7 @@ header.sticky .header__logo {
 }
 
 .advantages ul li:hover {
+    transition: var(--header-transition-seconds);
     color: var(--green);
 }
 
@@ -216,6 +229,7 @@ footer ul li i {
 }
 
 footer ul li a:hover {
+    transition: var(--header-transition-seconds);
     color: var(--green);
 }
 

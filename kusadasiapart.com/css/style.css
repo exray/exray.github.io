@@ -231,11 +231,18 @@ footer ul li a:hover {
 }
 
 @media screen and (max-width: 769px) {
-    header {
-
+    header__menu {
+        display: none;
     }
 
     header.sticky {
         
     }
+}
+
+@media screen and (max-width: 481px) {
+}
+
+@media screen and (max-width: 320px) {
+
 }

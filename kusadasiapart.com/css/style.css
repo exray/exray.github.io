@@ -53,7 +53,7 @@ header .header__logo {
     transition: var(--header-transition-seconds);
     z-index: 10000;
     margin-right: auto;
-    margin-left: 1vh;
+    margin-left: 2vh;
 }
 
 header .header__phone {
@@ -76,11 +76,12 @@ header ul {
     justify-content: center;
     align-items: center;
     list-style-type: none;
+    margin-right: 5vh;
 }
 
 header ul li a {
     position: relative;
-    margin: 0 15px;
+    margin: 0 2vh;
     text-decoration: none;
     color: var(--black);
     letter-spacing: 2px;
@@ -130,7 +131,7 @@ header.sticky ul li a, header.sticky .header__logo, header.sticky .header__phone
 .advantages ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px 40px;
+    gap: 4vh 4vw;
     align-content: center;
     justify-content: center;
 }
@@ -152,7 +153,7 @@ header.sticky ul li a, header.sticky .header__logo, header.sticky .header__phone
 
 .advantages ul li i {
     font-size: 3em;
-    margin: 10px;
+    margin: 1vh;
 }
 
 .advantages ul li i:hover {
@@ -225,7 +226,7 @@ footer ul li a {
 
 footer ul li i {
     font-size: 1.3em;
-    margin: 10px;
+    margin: 1vh;
 }
 
 footer ul li a:hover {
@@ -235,12 +236,13 @@ footer ul li a:hover {
 
 @media screen and (max-width: 1025px) {
     header {
-        padding: 20px 20px;
-        width: 99%;
+        /* padding: 20px 20px; */
+        /* width: 99%; */
+        padding: 1vh 2vw;
     }
 
     header.sticky {
-        padding: 10px 20px;
+        padding: 1vh 2vw;
     }
 }
 

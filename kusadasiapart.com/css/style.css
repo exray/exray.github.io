@@ -240,9 +240,17 @@ footer ul li a:hover {
         /* width: 99%; */
         padding: 1vh 2vw;
     }
-
+    
     header.sticky {
         padding: 1vh 2vw;
+    }
+
+    header ul {
+        margin-right: 0vh;
+    }
+
+    header {
+        font-size: 0.9em;
     }
 }
 

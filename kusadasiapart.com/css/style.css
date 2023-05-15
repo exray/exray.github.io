@@ -34,7 +34,7 @@ header {
     align-items: center;
     transition: var(--header-transition-seconds);
     padding: 2vh 2vw;
-    z-index: 999;
+    z-index: 10000;
 }
 
 header.sticky {
@@ -52,7 +52,7 @@ header .header__logo {
     letter-spacing: 2px;
     transition: var(--header-transition-seconds);
     z-index: 10000;
-    margin-right: auto;
+    /* margin-right: auto; */
     margin-left: 2vh;
 }
 
@@ -60,10 +60,17 @@ header .header__phone {
     font-size: 1.8em;
     transition: var(--header-transition-seconds);
     color: var(--black);
+    margin-right: auto;
+    margin-left: 1vw;
+    z-index: 10000;
 }
 
 header .header__phone a {
     color: var(--black);
+}
+
+a.header__phone {
+    text-decoration: none;
 }
 
 header a:hover,
@@ -71,7 +78,7 @@ header.sticky a:hover {
     color: var(--green);
 }
 
-header ul {
+.header__list {
     position: relative;
     display: flex;
     justify-content: center;
@@ -80,7 +87,7 @@ header ul {
     margin-right: 5vh;
 }
 
-header ul li a {
+.header__list li a {
     position: relative;
     margin: 0 2vh;
     text-decoration: none;
@@ -272,7 +279,8 @@ footer ul li a:hover {
     color: var(--green);
 }
 
-@media screen and (max-width: 1025px) {
+
+@media screen and (max-width: 1100px) {
     header {
         /* padding: 20px 20px; */
         /* width: 99%; */
@@ -283,7 +291,7 @@ footer ul li a:hover {
         padding: 1vh 2vw;
     }
 
-    header ul {
+    .header__list {
         margin-right: 0vh;
     }
 
@@ -292,12 +300,26 @@ footer ul li a:hover {
     }
 }
 
-@media screen and (max-width: 769px) {
-    header__menu {
+@media screen and (max-width: 940px) {
+
+    .header__menu {
         display: none;
     }
 
-    .rooms__room {
+    header .header__phone {
+        margin: 0;
+        margin-right: 5vw;
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+    
+    header {
+        font-size: 0.8em;
+    }
+
+    .rooms__room, .rooms__room.row-reverse {
         flex-direction: column;
     }
 

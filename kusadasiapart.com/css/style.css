@@ -187,8 +187,8 @@ header.sticky ul li a, header.sticky .header__logo, header.sticky .header__phone
     transform: translateX(20%);
 }
 
-.room-image:nth-child(2),
-.room-image:nth-child(4) {
+.rooms__image:nth-child(2),
+.rooms__image:nth-child(4) {
     transform: translateX(-20%);
 }
 

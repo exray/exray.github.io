@@ -20,10 +20,26 @@ function animateAdvantagesOnScroll() {
 }
 
 function animateRoomsOnScroll() {
-    const elements = document.querySelectorAll(".rooms__photos img");
+    const rooms_photo = document.querySelectorAll(".rooms__room img");
+    const rooms_text = document.querySelectorAll(".rooms__room p");
     const windowHeight = window.innerHeight;
 
-    elements.forEach((element, index) => {
+    rooms_photo.forEach((element, index) => {
+        const rect = element.getBoundingClientRect();
+        const distanceFromTop = rect.top;
+
+        if (distanceFromTop - windowHeight <= 0) {
+            if (index % 2 === 0) {
+                element.classList.add("animate-right");
+            } else {
+                element.classList.add("animate-left");
+            }
+        } else {
+            element.classList.remove("animate-right", "animate-left");
+        }
+    });
+
+    rooms_text.forEach((element, index) => {
         const rect = element.getBoundingClientRect();
         const distanceFromTop = rect.top;
 

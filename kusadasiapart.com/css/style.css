@@ -31,7 +31,7 @@ header {
     width: 99%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     transition: var(--header-transition-seconds);
     padding: 2vh 2vw;
     z-index: 10000;
@@ -40,6 +40,13 @@ header {
 header.sticky {
     padding: 2vh 2vw;
     background: var(--black);
+}
+
+header .header__logo-tagline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header .header__logo {
@@ -56,13 +63,22 @@ header .header__logo {
     margin-left: 2vh;
 }
 
+header .header__tagline {
+    margin-left: 2vh;
+}
+
 header .header__phone {
-    font-size: 1.8em;
+    font-size: 1.5em;
     transition: var(--header-transition-seconds);
     color: var(--black);
     margin-right: auto;
     margin-left: 1vw;
     z-index: 10000;
+}
+
+header .header__tagline {
+    transition: var(--header-transition-seconds);
+    /* font-size: 0.8em; */
 }
 
 header .header__phone a {
@@ -99,7 +115,8 @@ header.sticky a:hover {
 
 header.sticky ul li a,
 header.sticky .header__logo,
-header.sticky .header__phone {
+header.sticky .header__phone,
+header.sticky .header__tagline {
     color: var(--white);
 }
 
@@ -186,6 +203,7 @@ header.sticky .header__phone {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     /* padding-bottom: 1vh; */
 }
 
@@ -357,7 +375,41 @@ footer ul li a:hover {
     }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 600px) {
+    header {
+        padding: 1vh 0.5vw;
+    }
+    
+    header.sticky {
+        padding: 1vh 0.5vw;
+    }
+    
+    header .header__logo,
+    header .header__tagline {
+        margin-left: 0.3vh;
+    }
+
+    header .header__phone {
+        margin-right: 0.3vh;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    header {
+        flex-direction: column;
+    }
+
+    header .header__phone {
+        margin-top: 1vh;
+    }
+
+    .about-us h1 {
+        font-size: 2em;
+    }
+
+    footer p {
+        word-wrap: break-word;
+    }
 }
 
 @media screen and (max-width: 320px) {

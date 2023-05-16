@@ -247,6 +247,29 @@ header.sticky .header__phone {
     transform: translateX(0);
 }
 
+.splide {
+    margin: 0 auto;
+}
+
+.gallery {
+    background-color: var(--gray-light);
+}
+
+#image-carousel {
+    margin-top: 3vh;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.splide__list {
+    /* margin: 0 auto; */
+    /* text-align: center; */
+}
+
 footer {
     text-align: center;
     min-height: 15vh;

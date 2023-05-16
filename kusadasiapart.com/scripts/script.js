@@ -57,3 +57,12 @@ function animateRoomsOnScroll() {
 
 window.addEventListener("scroll", animateAdvantagesOnScroll);
 window.addEventListener("scroll", animateRoomsOnScroll);
+
+document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#image-carousel', {
+        lazyLoad: 'nearby',
+        // heightRatio: 0.5,
+        type: 'loop',
+        width: '40vw',
+    } ).mount();
+} );

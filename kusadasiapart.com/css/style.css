@@ -191,12 +191,11 @@ header.sticky .header__tagline {
     min-height: 50vh;
     background-color: var(--white);
     text-align: center;
-    padding-top: 3vh;
     color: var(--gray-dark);
 }
 
 .rooms h2 {
-    padding-bottom: 3vh;
+    padding: 3vh;
 }
 
 .rooms__room {

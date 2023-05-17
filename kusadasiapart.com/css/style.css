@@ -85,6 +85,10 @@ header .header__phone a {
     color: var(--black);
 }
 
+header .header__phone i {
+    margin-right: 0.5vw;
+}
+
 a.header__phone {
     text-decoration: none;
 }

@@ -269,7 +269,14 @@ header.sticky .header__tagline {
 }
 
 .gallery {
-    background-color: var(--gray-light);
+    /* background-color: var(--gray-light); */
+    padding-top: 10vh;
+}
+
+.gallery__header {
+    text-align: center;
+    font-size: 2em;
+    color: var(--gray-dark);
 }
 
 #image-carousel {

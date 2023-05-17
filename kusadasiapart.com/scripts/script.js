@@ -60,9 +60,20 @@ window.addEventListener("scroll", animateRoomsOnScroll);
 
 document.addEventListener( 'DOMContentLoaded', function () {
     new Splide( '#image-carousel', {
-        lazyLoad: 'nearby',
-        // heightRatio: 0.5,
-        type: 'loop',
-        width: '40vw',
+        type       : 'loop',
+        height     : '45rem',
+        focus      : 'center',
+        autoWidth  : true,
+        perPage    : 4,
+        gap        : '1vh',
+        breakpoints: {
+            1024: {
+                perPage: 2,
+            },
+            
+            800: {
+                perPage: 1,
+            },
+        }
     } ).mount();
 } );

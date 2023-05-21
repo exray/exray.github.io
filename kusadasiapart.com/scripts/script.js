@@ -65,12 +65,11 @@ document.addEventListener( 'DOMContentLoaded', function () {
         focus      : 'center',
         autoWidth  : true,
         perPage    : 4,
-        gap        : '1vh',
+        gap        : '1vw',
         breakpoints: {
             1024: {
                 perPage: 2,
             },
-            
             800: {
                 perPage: 1,
             },

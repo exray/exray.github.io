@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Kusadasi apart hotel</title>
         <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style.min.css" />
         <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
         <script
             src="https://kit.fontawesome.com/8a5fc83356.js"
@@ -25,14 +25,15 @@
             </div> -->
             <nav class="header__menu">
                 <ul class="header__list">
-                    <li><a href="#home" class="header__link">Home</a></li>
-                    <li><a href="#rooms" class="header__link">Our rooms</a></li>
-                    <li><a href="#footer" class="header__link">Contact us</a></li>
+                    <li><a href="#home" class="header__link">Ana sayfa</a></li>
+                    <li><a href="#gallery" class="header__link">Galeri</a></li>
+                    <li><a href="#footer" class="header__link">İletişim</a></li>
                 </ul>
             </nav>
         </header>
         <section class="main-photo" id="home">
-            <img src="images/bg.jpg" alt="Ladies beach" />
+            <!-- <img src="images/bg.webp" srcset="images/bg-mobile-800.webp 800w, images/bg.webp 1600w" alt="Ladies beach" /> -->
+            <img src="images/bg.webp" alt="Ladies beach" />
         </section>
         <section class="about-us">
             <h1>Kusadasi Ladies Beach Apartments</h1>
@@ -45,79 +46,73 @@
         </section>
         <section class="advantages">
             <ul>
-                <li><i class="fa fa-wifi"></i> Wifi</li>
-                <li><i class="fa-solid fa-bacon"></i> BBQ zone</li>
-                <li><i class="fa-solid fa-house-lock"></i> 24/7 security</li>
-                <li><i class="fa fa-shower"></i> Shower</li>
-                <li><i class="fa-solid fa-kitchen-set"></i> Kitchen</li>
-                <li>
-                    <i class="fa-solid fa-temperature-quarter"></i> Air
-                    conditioner
-                </li>
-                <li><i class="fa fa-tv"></i> Led TV</li>
-                <li><i class="fa-solid fa-elevator"></i> Elevator</li>
-                <li><i class="fa-solid fa-umbrella-beach"></i> Beach near</li>
-                <li><i class="fa-solid fa-van-shuttle"></i> Minibus near</li>
-                <li><i class="fa-solid fa-utensils"></i> Restaurants near</li>
-                <li><i class="fa-solid fa-store"></i> Markets near</li>
-                <li><i class="fa-solid fa-carrot"></i> Farmers market near</li>
-                <li>
-                    <i class="fa-solid fa-plane"></i> Airport transfer 45 min
-                </li>
+                <li><i class="fa fa-wifi"></i>Wifi</li>
+                <li><i class="fa-solid fa-bacon"></i>Mangal</li>
+                <li><i class="fa-solid fa-house-lock"></i>???24/7 security???</li>
+                <li><i class="fa fa-shower"></i>Banyo</li>
+                <li><i class="fa-solid fa-kitchen-set"></i>Mutfak</li>
+                <li><i class="fa-solid fa-temperature-quarter"></i>Klima</li>
+                <li><i class="fa fa-tv"></i>Led TV</li>
+                <li><i class="fa-solid fa-elevator"></i>Asansör</li>
+                <li><i class="fa-solid fa-umbrella-beach"></i>Denize yakın</li>
+                <li><i class="fa-solid fa-van-shuttle"></i>Dolmuş yakın</li>
+                <li><i class="fa-solid fa-utensils"></i>Restoran yakın</li>
+                <li><i class="fa-solid fa-store"></i>Market yakın</li>
+                <li><i class="fa-solid fa-carrot"></i>Pazar yakın</li>
+                <li><i class="fa-solid fa-plane"></i>Havaalanı Transferi̇</li>
             </ul>
         </section>
-        <section class="rooms" id="rooms">
-            <!-- <h2>Our rooms</h2> -->
+        <section class="rooms">
             <section class="rooms__room">
                 <div class="rooms__content"></div>
-                    <img class="rooms__photo" src="images/bed_towels.jpg" alt="Bedroom" />
-                    <p class="rooms__text">Our aparthotel consists of 12 rooms. We are pleased to welcome you not just as a client, but as a guest and do our best to make you satisfied.</p>
+                    <img class="rooms__photo" src="images/bed_towels.webp" alt="Bedroom" loading="lazy"/>
+                    <p class="rooms__text">12 odalı apart otelimiz sizlere en iyi konaklama hizmetini sunmak sizi müşteriden daha çok misafir olarak görmekte ve ağırlamaktadır.</p>
                 </div>
         </section>
         <section class="rooms__room row-reverse">
             <div class="rooms__content"></div>
-                <img class="rooms__photo" loading="lazy" src="images/terrace.jpg" alt="Kitchen couch" />
-                <p class="rooms__text">Convenient location just 50 meters from the beach will allow you to enjoy your summer holidays.</p>
+                <img class="rooms__photo" loading="lazy" src="images/terrace.webp" alt="Terrace" loading="lazy"/>
+                <p class="rooms__text">Sahile 50 metre mesafede yakın olan apart otelimiz sizlere daha rahat ve konforlu bir hizmet vermek için sizleri en iyi şekilde güler yüzlü bir tutumla ağırlamaktadır.</p>
             </div>
             </section>
         </section>
         <section class="rooms" id="rooms">
             <section class="rooms__room">
                 <div class="rooms__content"></div>
-                    <img class="rooms__photo" src="images/road_beach.jpg" alt="Bedroom" />
+                    <img class="rooms__photo" src="images/road_beach.webp" alt="Bedroom" loading="lazy"/>
                     <p class="rooms__text">It is enough to turn off the main street, and the noise of cafes and restaurants will remain far away so that you can enjoy a peaceful sleep or sit with a cup of tea or coffee on the terrace.</p>
                 </div>
         </section>
         <section class="rooms__room row-reverse">
             <div class="rooms__content"></div>
-                <img class="rooms__photo" loading="lazy" src="images/couch_table.jpg" alt="Kitchen couch" />
-                <p class="rooms__text">Book a room in our hotel and enjoy every moment of your holiday.</p>
+                <img class="rooms__photo" loading="lazy" src="images/couch_table.webp" alt="Kitchen couch" loading="lazy"/>
+                <p class="rooms__text">Unutulmaz bir tatil için kendinize zaman ayırın ve harika bir yer seçin. Tatiliniz boyunca mutlu anılar ve rahatlama sağlayacak etkinlikler planlayın. Tatilinizin tadını çıkarın ve yeniden şarj olun!</p>
             </div>
             </section>
         </section>
         
-        <section class="gallery">
-            <h2 class="gallery__header">Gallery</h2>
+        <section class="gallery" id="gallery">
+            <h2 class="gallery__header">Galeri</h2>
             <section id="image-carousel" class="splide" aria-label="Our rooms">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <img src="images/carousel_bathroom.jpg" alt="">
+                            <img src="images/carousel_bathroom.webp" alt="Bathroom" loading="lazy">
                         </li>
                         <li class="splide__slide">
-                            <img src="images/carousel_bedroom.jpg" alt="">
+                            <img src="images/carousel_bedroom.webp" alt="Bedroom" loading="lazy">
                         </li>
                         <li class="splide__slide">
-                            <img src="images/carousel_kitchen1.jpg" alt="">
+                            <img src="images/carousel_kitchen1.webp" alt="Kitchen 1" loading="lazy">
                         </li>
                         <li class="splide__slide">
-                            <img src="images/carousel_kitchen2.jpg" alt="">
+                            <img src="images/carousel_kitchen2.webp" alt="Kitchen 2" loading="lazy">
                         </li>
                         <li class="splide__slide">
-                            <img src="images/carousel_kitchen3.jpg" alt="">
+                            <img src="images/carousel_kitchen3.webp" alt="Kitchen 3" loading="lazy">
                         </li>
                         <li class="splide__slide">
-                            <img src="images/carousel_elevator.jpg" alt="">
+                            <img src="images/carousel_elevator.webp" alt="Elevator" loading="lazy">
                         </li>
                     </ul>
                 </div>
@@ -148,7 +143,7 @@
                 </li>
             </ul>
         </footer>
-        <script src="scripts/script.js"></script>
+        <script src="scripts/script.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     </body>
 </html>

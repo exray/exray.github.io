@@ -33,7 +33,7 @@
         </header>
         <section class="main-photo" id="home">
             <!-- <img src="images/bg.webp" srcset="images/bg-mobile-800.webp 800w, images/bg.webp 1600w" alt="Ladies beach" /> -->
-            <img src="images/bg.webp" alt="Ladies beach" />
+            <img data-src="images/bg.webp" class="lazyload" alt="Ladies beach" />
         </section>
         <section class="about-us">
             <h1>Kusadasi Ladies Beach Apartments</h1>
@@ -65,13 +65,13 @@
         <section class="rooms">
             <section class="rooms__room">
                 <div class="rooms__content"></div>
-                    <img class="rooms__photo" src="images/bed_towels.webp" alt="Bedroom" loading="lazy"/>
+                    <img class="rooms__photo lazyload" data-src="images/bed_towels.webp" alt="Bedroom" loading="lazy"/>
                     <p class="rooms__text">12 odalı apart otelimiz sizlere en iyi konaklama hizmetini sunmak sizi müşteriden daha çok misafir olarak görmekte ve ağırlamaktadır.</p>
                 </div>
         </section>
         <section class="rooms__room row-reverse">
             <div class="rooms__content"></div>
-                <img class="rooms__photo" loading="lazy" src="images/terrace.webp" alt="Terrace" loading="lazy"/>
+                <img class="rooms__photo lazyload" data-src="images/terrace.webp" alt="Terrace" loading="lazy"/>
                 <p class="rooms__text">Sahile 50 metre mesafede yakın olan apart otelimiz sizlere daha rahat ve konforlu bir hizmet vermek için sizleri en iyi şekilde güler yüzlü bir tutumla ağırlamaktadır.</p>
             </div>
             </section>
@@ -79,13 +79,13 @@
         <section class="rooms" id="rooms">
             <section class="rooms__room">
                 <div class="rooms__content"></div>
-                    <img class="rooms__photo" src="images/road_beach.webp" alt="Bedroom" loading="lazy"/>
+                    <img class="rooms__photo lazyload" data-src="images/road_beach.webp" alt="Bedroom" loading="lazy"/>
                     <p class="rooms__text">It is enough to turn off the main street, and the noise of cafes and restaurants will remain far away so that you can enjoy a peaceful sleep or sit with a cup of tea or coffee on the terrace.</p>
                 </div>
         </section>
         <section class="rooms__room row-reverse">
             <div class="rooms__content"></div>
-                <img class="rooms__photo" loading="lazy" src="images/couch_table.webp" alt="Kitchen couch" loading="lazy"/>
+                <img class="rooms__photo lazyload" loading="lazy" data-src="images/couch_table.webp" alt="Kitchen couch" loading="lazy"/>
                 <p class="rooms__text">Unutulmaz bir tatil için kendinize zaman ayırın ve harika bir yer seçin. Tatiliniz boyunca mutlu anılar ve rahatlama sağlayacak etkinlikler planlayın. Tatilinizin tadını çıkarın ve yeniden şarj olun!</p>
             </div>
             </section>
@@ -144,6 +144,7 @@
             </ul>
         </footer>
         <script src="scripts/script.min.js"></script>
+        <script src="scripts/lazysizes.min.js" async=""></script>
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     </body>
 </html>

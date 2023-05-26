@@ -63,7 +63,8 @@ document.addEventListener( 'DOMContentLoaded', function () {
         type       : 'loop',
         height     : '45rem',
         focus      : 'center',
-        autoWidth  : true,
+        // autoWidth  : true,
+        perPage    : 2,
         gap        : '0.3vw',
         breakpoints: {
             1024: {

@@ -64,13 +64,20 @@ document.addEventListener( 'DOMContentLoaded', function () {
         height     : '45rem',
         focus      : 'center',
         autoWidth  : true,
-        gap        : '1vw',
+        gap        : '0.3vw',
         breakpoints: {
             1024: {
-                height     : '30rem',
+                // autoHeight: true,
+                autoWidth: true,
+                height     : '35rem',
+                perPage    : 2,
             },
             800: {
-                height     : '30rem',
+                // autoHeight: true,
+                autoWidth: false,
+                // autoHeight: true,
+                height     : '20rem',
+                perPage    : 1,
             },
         }
     } ).mount();

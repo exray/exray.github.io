@@ -61,7 +61,7 @@ window.addEventListener("scroll", animateRoomsOnScroll);
 document.addEventListener( 'DOMContentLoaded', function () {
     new Splide( '#image-carousel', {
         type       : 'loop',
-        height     : '45rem',
+        height     : '35rem',
         focus      : 'center',
         // autoWidth  : true,
         perPage    : 2,

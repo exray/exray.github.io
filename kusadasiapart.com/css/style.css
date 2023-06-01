@@ -336,18 +336,18 @@ footer ul li a:hover {
         font-size: 0.9em;
         padding: 1vh 2vw;
     }
-
+    
     header.sticky {
         padding: 1vh 2vw;
     }
-
+    
     .header__list {
         margin-right: 0vh;
     }
-
-    .main-photo {
+    
+    /* .main-photo {
         height: 100vh;
-    }
+    } */
 }
 
 @media screen and (max-width: 940px) {
@@ -421,5 +421,12 @@ footer ul li a:hover {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 426px) {
+    /* .main-photo img{
+        width: 150%;
+    }
+
+    .main-photo {
+        height: 60vh;
+    } */
 }
